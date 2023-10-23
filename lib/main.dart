@@ -27,18 +27,15 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.blueGrey[600],
         ),
         
-        body:  Center(
-          child: TextButton.icon(
-            onPressed: () {logger.i('email button clicked');},
-            icon: const Icon(
-              Icons.mail,
-            ),
-            label: const Text('email me'),
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.blueGrey[600],
-            ),
-          ),
+        body:  Container(
+          color: Colors.grey[400],
+          margin: const EdgeInsets.fromLTRB(10, 20, 30, 40),
+          padding: const EdgeInsets.fromLTRB(10, 20, 30, 40),
+          
+          
+          child: const Text('Hello World'),
+
+        
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
