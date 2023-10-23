@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-    home:Home(),
-  )
-  );
+  runApp(const MaterialApp(
+    home: Home(),
+  ));
 }
-
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -17,13 +14,17 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            'My First Flutter App',            
-            ),
+            'My First Flutter App',
+          ),
           centerTitle: true,
           backgroundColor: Colors.blueGrey[600],
         ),
         body: Center(
-          child: Image.asset('images/64.jpg'),
+          child: Icon(
+            Icons.airport_shuttle,
+            color: Colors.lightBlue[900],
+            size: 100.0,
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
