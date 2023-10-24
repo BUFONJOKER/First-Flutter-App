@@ -28,6 +28,7 @@ class Home extends StatelessWidget {
         ),
         
         body:  Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const Text('Hello World'),
             TextButton(
