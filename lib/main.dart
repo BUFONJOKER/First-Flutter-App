@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
-
 void main() {
-  
   runApp(const MaterialApp(
     home: Home(),
   ));
 }
 
 final logger = Logger();
-class Home extends StatelessWidget {
-  
 
+class Home extends StatelessWidget {
   const Home({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
@@ -26,27 +22,26 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.blueGrey[600],
         ),
-        
-        body:  Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body:  Column(
           children: [
-            const Text('Hello World'),
-            TextButton(
-              onPressed: () {},
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: Colors.blueGrey[600],
-              ),
-              child:  const Text('Click Me'),
+            Container(
+              padding: const EdgeInsets.all(10),
+              color: Colors.cyan,
+              child: const Text('One'),
             ),
             Container(
-              color: Colors.cyan,
-              padding: const EdgeInsets.all(30.0),
-              child: const Text('Inside Container'),
+              padding: const EdgeInsets.all(20),
+              color: Colors.red,
+              child: const Text('Two'),
+            ),
+            Container(
+              padding: const EdgeInsets.all(30),
+              color: Colors.amber,
+              child: const Text('Three'),
             ),
           ],
         ),
+   
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: Colors.blueGrey[600],
