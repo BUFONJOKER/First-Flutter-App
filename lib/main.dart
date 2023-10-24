@@ -23,6 +23,8 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.blueGrey[600],
         ),
         body:  Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               padding: const EdgeInsets.all(10),
