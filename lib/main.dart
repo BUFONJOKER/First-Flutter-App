@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.blueGrey[600],
         ),
-        body:  Column(
+        body: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -43,7 +43,6 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
-   
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: Colors.blueGrey[600],
